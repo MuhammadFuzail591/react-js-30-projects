@@ -1,3 +1,4 @@
+"use client"
 /* eslint-disable @typescript-eslint/no-unused-expressions */
 import React, { useEffect } from 'react'
 import { useState } from 'react'

@@ -1,3 +1,4 @@
+"use client"
 import Alert from '../components/Alert'
 export default function AlertApp () {
   return (
