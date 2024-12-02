@@ -3,17 +3,11 @@ import React from 'react'
 import Title from '../components/Title'
 function RandomizeColor() {
 
-    // const handleClick = () => {
-    //     const randomColor = Math.floor(Math.random() * 16777215).toString(16);
-    //     const color = `#${randomColor}`;
-    //     document.body.style.backgroundColor = color;
-    // }
-
     const handleClick = (e) => {
       console.log(e.target.value);
       // console.log(getRandomColor())
 
-      document.body.style.backgroundColor = getRandomColor();
+      // document.body.style.backgroundColor = getRandomColor();
       e.target.style.backgroundColor = getRandomColor();
     }
 

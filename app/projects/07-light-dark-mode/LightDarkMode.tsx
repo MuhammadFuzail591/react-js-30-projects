@@ -1,4 +1,5 @@
 "use client"
+
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @typescript-eslint/no-unused-expressions */
 import { useEffect, useState } from 'react'
@@ -8,12 +9,13 @@ import { ThemeContext, themes } from './context/theme-context'
 
 const LightDarkMode = () => {
   const [theme, setTheme] = useState(themes.light)
-
+  let docBody:HTMLElement;
   const toggleTheme = () => {
     theme === themes.light ? setTheme(themes.dark) : setTheme(themes.light)
   }
-
-  const docBody = document.body;
+  useEffect(() => {
+    docBody = document.body;
+  },[])
 
   useEffect(() => {
     switch(theme){
