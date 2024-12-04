@@ -9,13 +9,10 @@ import { ThemeContext, themes } from './context/theme-context'
 
 const LightDarkMode = () => {
   const [theme, setTheme] = useState(themes.light)
-  let docBody:HTMLElement;
   const toggleTheme = () => {
     theme === themes.light ? setTheme(themes.dark) : setTheme(themes.light)
   }
-  useEffect(() => {
-    docBody = document.body;
-  },[])
+   const docBody = document.body;
 
   useEffect(() => {
     switch(theme){

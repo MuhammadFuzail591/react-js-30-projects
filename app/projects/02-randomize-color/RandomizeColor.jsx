@@ -7,9 +7,10 @@ function RandomizeColor() {
       console.log(e.target.value);
       // console.log(getRandomColor())
 
-      // document.body.style.backgroundColor = getRandomColor();
+      document.body.style.backgroundColor = getRandomColor();
       e.target.style.backgroundColor = getRandomColor();
     }
+
 
     const getRandomColor = () => {
         let letters = "0123456789ABCDEF";
