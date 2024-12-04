@@ -6,7 +6,9 @@
 // import AlertApp from './projects/05-alert-app/AlertApp'
 // import TemperatureControllerApp from './projects/06-temperature-controller/TemperatureControllerApp'
 // import LightDarkMode from "./projects/07-light-dark-mode/LightDarkMode"
-import SlideToUnlock from './projects/08-lock-slider-app/SlideToUnlock'
+// import SlideToUnlock from './projects/08-lock-slider-app/SlideToUnlock'
+import SliderApp from './projects/09-slider/SliderApp'
+
 export default function Home () {
   return (
     <div>
@@ -16,7 +18,8 @@ export default function Home () {
       {/* <AlertApp /> */}
       {/* <TemperatureControllerApp /> */}
       {/* <LightDarkMode/> */}
-      <SlideToUnlock />
+      {/* <SlideToUnlock /> */}
+      <SliderApp />
     </div>
   )
 }
